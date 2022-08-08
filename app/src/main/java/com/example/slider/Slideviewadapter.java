@@ -42,33 +42,48 @@ public class Slideviewadapter extends PagerAdapter {
         TextView Title=view.findViewById(R.id.title);
         Button back=view.findViewById(R.id.back);
         Button next=view.findViewById(R.id.next);
-
+        TextView desc=view.findViewById(R.id.desc);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.viewPager.setCurrentItem(position-1);
+            }
+        });
+next.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        MainActivity.viewPager.setCurrentItem(position+1);
+    }
+});
         switch (position){
             case 0:
-                logo.setImageResource(R.drawable.img1);
+                logo.setImageResource(R.drawable.pine);
             dot1.setImageResource(R.drawable.selected);
                 dot2.setImageResource(R.drawable.unselected);
                 dot3.setImageResource(R.drawable.unselected);
-                Title.setText("Interview process");
+                Title.setText("PINEAPPLE");
+                desc.setText(R.string.pine);
                 back.setVisibility(View.GONE);
                 next.setVisibility(View.VISIBLE);
 
                 break;
             case 1:
-                logo.setImageResource(R.drawable.office);
+                logo.setImageResource(R.drawable.pomo);
                 dot1.setImageResource(R.drawable.unselected);
                 dot2.setImageResource(R.drawable.selected);
                 dot3.setImageResource(R.drawable.unselected);
-                Title.setText("training process");
+                Title.setText("POMOGRANITE");
+                desc.setText(R.string.pomo);
                 back.setVisibility(View.VISIBLE);
                 next.setVisibility(View.VISIBLE);
                 break;
             case 2:
-                logo.setImageResource(R.drawable.meet);
+                logo.setImageResource(R.drawable.apple);
                 dot1.setImageResource(R.drawable.unselected);
                 dot2.setImageResource(R.drawable.unselected);
                 dot3.setImageResource(R.drawable.selected);
-                Title.setText("working process");
+                Title.setText("Apple");
+                desc.setText(R.string.apple);
                 back.setVisibility(View.VISIBLE);
                 next.setVisibility(View.GONE);
         }

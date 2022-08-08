@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Slider</string>
+    <string name="pine">The fruit of a pineapple includes tissue from the sepals as well as the pistils of many flowers. It is a multiple-accessory fruit.
+</string>
+    <string name="pomo">
+        Pomegranates are unique in appearance and taste.
+
+    </string>
+<string name="apple">The fruit has high water content and a sweet and juicy taste, which makes it a refreshing summer fruit.
+
+</string>
 </resources>

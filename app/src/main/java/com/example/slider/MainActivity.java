@@ -6,7 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-    ViewPager viewPager;
+  public static   ViewPager viewPager;
     Slideviewadapter adapter;
 
     @Override
