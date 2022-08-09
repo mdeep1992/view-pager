@@ -6,7 +6,9 @@
         Pomegranates are unique in appearance and taste.
 
     </string>
-<string name="apple">The fruit has high water content and a sweet and juicy taste, which makes it a refreshing summer fruit.
+    <string name="apple">The fruit has high water content and a sweet and juicy taste, which makes it a refreshing summer fruit.
 
 </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
